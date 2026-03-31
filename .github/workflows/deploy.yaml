@@ -16,11 +16,11 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             mkdir -p /home/ubuntu/app
-            cd /home/ubuntu/app
-            if [ ! -d ".git" ]; then
-                git clone https://github.com/phanis-git/sample-devops-project1.git .
-            else
-               git pull origin main
-            fi
-            docker-compose down
-            docker-compose up -d
+            # cd /home/ubuntu/app
+            # if [ ! -d ".git" ]; then
+            #     git clone https://github.com/phanis-git/sample-devops-project1.git .
+            # else
+            #    git pull origin main
+            # fi
+            # docker-compose down
+            # docker-compose up -d
