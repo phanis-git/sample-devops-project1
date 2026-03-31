@@ -16,4 +16,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/ubuntu/app
-            
+            git pull origin main
+            docker-compose down
+            docker-compose up -d
