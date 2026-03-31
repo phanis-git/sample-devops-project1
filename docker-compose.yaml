@@ -1,18 +1,18 @@
 version: '3.8'
 services:
   app-frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile-nginx
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile-nginx
     image: sivaphanikumar/app-frontend  
     restart: always
     container_name: app-frontend
     ports:
       - "8080:80"
   app-python:
-    build:
-      context: .
-      dockerfile: Dockerfile-python
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile-python
     image: sivaphanikumar/app-python
     restart: always
     container_name: app-python
